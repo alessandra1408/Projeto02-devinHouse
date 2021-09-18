@@ -1,17 +1,36 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
-import { Container } from '@material-ui/core';
+import Form from './Form'
+import { Container, Button, Typography, Box } from '@material-ui/core';
+import './style.css'
 
 
 class MessagePage extends Component{
     render(){
         return(
             <>
-                <Container component="main" maxWidth={false}>
+                <Container component="main" maxWidth="xm" id="body">
                     <Header />
-                    <h1>
-                        MessagePage
-                    </h1>
+                    <Container class="head">
+                        <Box id="message">
+                            <Typography> MessagePage </Typography>
+                            <Box id="button">
+                                <Button
+                                variant="outlined"
+                            
+                                >Pesquisar</Button>
+                                <Button
+                                variant="contained"
+                                style={{left:15}}
+                                >Nova Mensagem</Button>
+                            </Box>
+                        </Box>
+                    </Container>
+
+                    <Container class="head">
+                        <Form />
+                    </Container>
+                
                 </Container>
             </>
         )

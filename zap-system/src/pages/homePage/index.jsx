@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from "../../components/Header"
-import { Container } from '@material-ui/core';
+import { Container, Button, Typography } from '@material-ui/core';
 
 export default function Homepage(){
 
