@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from '../../components/Header';
 import Form from './Form'
 import { Container, Button, Typography, Box } from '@material-ui/core';
+import { MenuList, MenuItem } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import './style.css'
 
 
@@ -15,14 +17,14 @@ class MessagePage extends Component{
                         <Box id="message">
                             <Typography> MessagePage </Typography>
                             <Box id="button">
-                                <Button
-                                variant="outlined"
-                            
-                                >Pesquisar</Button>
-                                <Button
-                                variant="contained"
-                                style={{left:15}}
-                                >Nova Mensagem</Button>
+                                <MenuList class="menu">
+                                    <MenuItem >
+                                        <Link class="item" to="/searchpage">Pesquisar</Link>
+                                    </MenuItem>                            
+                                    <MenuItem >
+                                        <Link class="item" to="/newmessagepage">Nova Mensagem</Link>
+                                    </MenuItem>                         
+                                </MenuList>
                             </Box>
                         </Box>
                     </Container>

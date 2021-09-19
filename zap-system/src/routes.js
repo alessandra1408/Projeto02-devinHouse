@@ -1,9 +1,9 @@
 import React from "react";
-import Homepage from "./pages/HomePage"
 import DashboardPage from "./pages/DashboardPage"
 import MessagePage from "./pages/MessagePage"
+import NewMessage from "./pages/MessagePage/NewMessage";
+import Search from "./pages/MessagePage/Search";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-
 
 
 export default function Routes() {
@@ -13,10 +13,6 @@ export default function Routes() {
       <BrowserRouter>
   
           <Switch>
-  
-            <Route exact path="/">
-              <Homepage />
-            </Route>
             
             <Route exact path="/messagePage">
               <MessagePage />
@@ -24,6 +20,14 @@ export default function Routes() {
 
             <Route exact path="/dashboardPage">
               <DashboardPage />
+            </Route>
+
+            <Route exact path="/newmessagepage">
+              <NewMessage />
+            </Route>
+
+            <Route exact path="/searchpage">
+              <Search />
             </Route>
     
           </Switch>

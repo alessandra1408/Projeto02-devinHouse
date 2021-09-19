@@ -13,9 +13,6 @@ class Header extends Component {
 
                 <MenuList class="menu">
                         <MenuItem >
-                            <Link class="item" to="/">Home</Link>
-                        </MenuItem>
-                        <MenuItem >
                             <Link class="item" to="/messagepage">Mensagens</Link>
                         </MenuItem>                           
                         <MenuItem >
