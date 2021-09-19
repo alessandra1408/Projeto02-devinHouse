@@ -1,12 +1,25 @@
 #Inputs{
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    margin-left: 7%;
-    margin-right: 7%;
+}
+
+#table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.bold{
+    font-weight: 1000;
 }
 
 input {
     display: block;
+    margin-right: 60px;
 }
-    
+
+button{
+    margin-left: 10px;
+}
