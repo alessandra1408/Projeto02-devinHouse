@@ -14,7 +14,7 @@ export default function Routes() {
   
           <Switch>
             
-            <Route exact path="/messagePage">
+            <Route exact path="/">
               <MessagePage />
             </Route>
 

@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/Header';
-import Form from './Form'
+import Form from '../../components/Form'
 import { Container, Button, Typography, Box } from '@material-ui/core';
 import { MenuList, MenuItem } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import './style.css'
+import '../MessagePage/style.css'
 
 
-class MessagePage extends Component{
-    render(){
+export default function MessagePage(){
+
+    
+
         return(
             <>
                 <Container component="main" maxWidth="xm" id="body">
@@ -30,13 +32,53 @@ class MessagePage extends Component{
                     </Container>
 
                     <Container class="head">
-                        <Form />
+                        
+                        <div id="conteudo2">
+                            <div>
+                                <label htmlFor="gatilho">Gatilho</label>
+                                <input type="text" placeholder="fez_pix" id="gatilho" />
+                            </div>
+                            <div>
+                                <label htmlFor="canal">Canal</label>
+                                <input type="text" placeholder="email" id="canal" />
+                            </div>
+                            <div>
+                                <label htmlFor="timer">Timer</label>
+                                <input type="text" placeholder="12:00" id="timer" />
+                            </div>
+                        </div>
+                        
+                        <div id="tabela">
+                        <table style={{width:700}}>
+                            <tr style={{height:30}}>
+                                <th>Gatilho</th>
+                                <th>Canal</th>
+                                <th>Timer</th>
+                                <th>Ações</th>
+                            </tr>
+                            <tr style={{height:50}} class="cinza">
+                                <td>abertura_conta</td>
+                                <td>sms</td>
+                                <td>15:00</td>
+                                <td style={{width:150}}><button>Ver Mensagem</button></td>
+                            </tr>
+                            <tr style={{height:50}}>
+                                <td>fez_pix</td>
+                                <td>sms</td>
+                                <td>5:00</td>
+                                <td style={{width:150}}><button>Ver Mensagem</button></td>
+                            </tr>
+                            <tr style={{height:50}} class="cinza">
+                                <td>abertura_conta</td>
+                                <td>whatsapp</td>
+                                <td>73:00</td>
+                                <td style={{width:150}}><button>Ver Mensagem</button></td>
+                            </tr>
+                            </table>
+                        </div>
                     </Container>
                 
                 </Container>
             </>
         )
     }
-}
-
-export default MessagePage;

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Typography, TextField, Container, Grid, Box } from '@material-ui/core';
 import './style.css'
 
-class Form extends Component{
-    render(){
+export default function Form(){
         return(
             <>
              
@@ -58,7 +57,4 @@ class Form extends Component{
                 
             </>
         )
-    }
 }
-
-export default Form;
