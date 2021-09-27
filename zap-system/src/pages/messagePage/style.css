@@ -25,15 +25,19 @@
 
 table, th, td {
     border: 1px solid black;
-
 }
 
 th{
     color: rgb(0, 0, 165);
+    padding: 5px;
 }
 
 tr{
-    text-align:left
+    text-align:left;
+}
+
+td{
+    padding: 5px;
 }
 
 button{

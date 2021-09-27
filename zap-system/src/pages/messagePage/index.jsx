@@ -9,7 +9,11 @@ import '../MessagePage/style.css'
 
 export default function MessagePage(){
 
-    
+    const pesquisar = () => {
+        let tabela = document.getElementById("tabela")
+        tabela.innerHTML = "Teste";
+        
+    }
 
         return(
             <>
@@ -21,7 +25,7 @@ export default function MessagePage(){
                             <Box id="button">
                                 <MenuList class="menu">
                                     <MenuItem >
-                                        <Link class="item" to="/searchpage">Pesquisar</Link>
+                                        <Link class="item" to="/" onClick={pesquisar}>Pesquisar</Link>
                                     </MenuItem>                            
                                     <MenuItem >
                                         <Link class="item" to="/newmessagepage">Nova Mensagem</Link>
