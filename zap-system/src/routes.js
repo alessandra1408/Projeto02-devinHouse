@@ -1,8 +1,7 @@
 import React from "react";
 import DashboardPage from "./pages/DashboardPage"
 import MessagePage from "./pages/MessagePage"
-import NewMessage from "./pages/MessagePage/NewMessage";
-import Search from "./pages/MessagePage/Search";
+import NewMessage from "./pages/NewMessage";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 
@@ -24,10 +23,6 @@ export default function Routes() {
 
             <Route exact path="/newmessagepage">
               <NewMessage />
-            </Route>
-
-            <Route exact path="/searchpage">
-              <Search />
             </Route>
     
           </Switch>
